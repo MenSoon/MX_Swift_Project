@@ -33,7 +33,6 @@ class ZeroViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
                self.showAlertView("提示", message: "网络错误")
                 return
             }
-            
             var arr = dict["data"] as! NSArray
             
             for data : AnyObject in arr{
@@ -49,7 +48,6 @@ class ZeroViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
             
         }
     }
-
      func showAlertView(title:String,message:String) {
         var alert = UIAlertView()
         alert.title = title
