@@ -93,13 +93,12 @@ class ZeroViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         
         //Custom_Style
         let cellID:String = "ZeroCell"
-//        tableView.registerNib(UINib(nibName: "ZeroCell", bundle: nil));, forCellReuseIdentifier: cellID)
         //var nib = UINib(nibName: "ZeroCell", bundle: nil)
         tableView.registerNib(UINib(nibName: "ZeroCell", bundle: nil), forCellReuseIdentifier: cellID)
         var cell:ZeroCell = tableView.dequeueReusableCellWithIdentifier(cellID, forIndexPath: indexPath) as! ZeroCell
         var model:ZeroModel = self.dataSourceArr[indexPath.row] as! ZeroModel
-        cell.special_nameLabel.text = model.special_name
-        cell.thumbImageView.setImage("http://www.yishu.com\(model.thumb!)", placeHolder: nil)
+
+        cell.showDataModel(model)
         println(model.special_name)
         return cell
         

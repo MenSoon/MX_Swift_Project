@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>92716723-0EA0-47F2-B285-9153CAC22752</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MX_Swift_Project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F6CDB687CA563398E4AC51A0209675FE5EEC2C40</key>
+		<string>https://github.com/BestNash/MX_Swift_Project.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MX_Swift_Project.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F6CDB687CA563398E4AC51A0209675FE5EEC2C40</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/BestNash/MX_Swift_Project.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F6CDB687CA563398E4AC51A0209675FE5EEC2C40</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F6CDB687CA563398E4AC51A0209675FE5EEC2C40</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MX_Swift_Project</string>
+		</dict>
+	</array>
+</dict>
+</plist>

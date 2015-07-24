@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9374146C1B61D120006AE017 /* guide_iphone4_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 9374146B1B61D120006AE017 /* guide_iphone4_0.png */; };
+		9374146E1B61D264006AE017 /* 120_120.png in Resources */ = {isa = PBXBuildFile; fileRef = 9374146D1B61D264006AE017 /* 120_120.png */; };
 		9399E6801B5F3C0E007F860A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9399E67F1B5F3C0E007F860A /* AppDelegate.swift */; };
 		9399E6821B5F3C0E007F860A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9399E6811B5F3C0E007F860A /* Images.xcassets */; };
 		9399E6851B5F3C0E007F860A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9399E6831B5F3C0E007F860A /* LaunchScreen.xib */; };
@@ -69,6 +71,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9374146B1B61D120006AE017 /* guide_iphone4_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guide_iphone4_0.png; sourceTree = "<group>"; };
+		9374146D1B61D264006AE017 /* 120_120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 120_120.png; sourceTree = "<group>"; };
 		9399E67A1B5F3C0E007F860A /* MX_Swift_Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MX_Swift_Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9399E67E1B5F3C0E007F860A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9399E67F1B5F3C0E007F860A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -143,9 +147,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9374146A1B61D114006AE017 /* ImageSource */ = {
+			isa = PBXGroup;
+			children = (
+				9374146D1B61D264006AE017 /* 120_120.png */,
+				9374146B1B61D120006AE017 /* guide_iphone4_0.png */,
+			);
+			name = ImageSource;
+			sourceTree = "<group>";
+		};
 		9399E6711B5F3C0D007F860A = {
 			isa = PBXGroup;
 			children = (
+				9374146A1B61D114006AE017 /* ImageSource */,
 				93A71AC61B608F13001FFC9C /* Utility */,
 				9399E6AF1B5F422A007F860A /* ImageResource */,
 				9399E67C1B5F3C0E007F860A /* MX_Swift_Project */,
@@ -362,6 +376,7 @@
 				9399E6851B5F3C0E007F860A /* LaunchScreen.xib in Resources */,
 				9399E6D31B5F4275007F860A /* tabbar_icon_1@2x.png in Resources */,
 				9399E6E01B5F4275007F860A /* tabbar_icon_5@3x.png in Resources */,
+				9374146C1B61D120006AE017 /* guide_iphone4_0.png in Resources */,
 				9399E6A61B5F3D44007F860A /* FirstViewController.xib in Resources */,
 				9399E6AA1B5F3D81007F860A /* SecondViewController.xib in Resources */,
 				9399E6E81B5F96CC007F860A /* ZeroCell.xib in Resources */,
@@ -385,6 +400,7 @@
 				9399E6CF1B5F4275007F860A /* tabbar_icon8.png in Resources */,
 				9399E6D41B5F4275007F860A /* tabbar_icon_1@3x.png in Resources */,
 				9399E6E31B5F4275007F860A /* tabbar_icon_6@3x.png in Resources */,
+				9374146E1B61D264006AE017 /* 120_120.png in Resources */,
 				9399E6D11B5F4275007F860A /* tabbar_icon8@3x.png in Resources */,
 				9399E6D21B5F4275007F860A /* tabbar_icon_1.png in Resources */,
 				9399E6D81B5F4275007F860A /* tabbar_icon_3.png in Resources */,

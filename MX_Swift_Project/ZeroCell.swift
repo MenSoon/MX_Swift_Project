@@ -9,20 +9,25 @@
 import UIKit
 
 class ZeroCell: UITableViewCell {
-    var ZeroModelData:ZeroModel!
-    
     @IBOutlet weak var special_nameLabel: UILabel!
     
+    @IBOutlet weak var hitsLabel: UILabel!
+    @IBOutlet weak var bidtimesLabel: UILabel!
+    @IBOutlet weak var special_praiseButton: UIButton!
+    @IBOutlet weak var goods_countLabel: UILabel!
     @IBOutlet weak var thumbImageView: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-    func showDataModel(){
-//        self.special_nameLabel.text = ZeroModelData.special_name
-//        var url = "http://www.yishu.com\(ZeroModelData?.thumb)"
-        //println(url)
-        //self.thumbImageView!.setImage(url, placeHolder: nil)
+    func showDataModel(ZeroModelData:ZeroModel){
+        self.special_nameLabel.text = ZeroModelData.special_name!
+        self.thumbImageView.setImage("http://www.yishu.com\(ZeroModelData.thumb!)", placeHolder: nil)
+        self.hitsLabel.text = ZeroModelData.hits!
+        self.bidtimesLabel.text = ZeroModelData.bidtimes!
+        self.goods_countLabel.text = ZeroModelData.goods_count!
+       
+        self.special_praiseButton.setTitle("\(ZeroModelData.special_praise!)", forState: UIControlState.Normal)
     }
     
     override func setSelected(selected: Bool, animated: Bool) {

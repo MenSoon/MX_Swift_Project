@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         var root:RootViewController = RootViewController()
         var navc:UINavigationController = UINavigationController(rootViewController: root)
-        
+        navc.title = "哈哈"
         self.window?.rootViewController = navc
         self.window!.backgroundColor = UIColor.whiteColor()
         self.window!.makeKeyAndVisible()
