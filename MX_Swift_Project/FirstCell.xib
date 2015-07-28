@@ -28,7 +28,7 @@
             <connections>
                 <outlet property="titleLabel" destination="JuU-ch-8dk" id="X8h-Hh-s8d"/>
             </connections>
-            <point key="canvasLocation" x="560" y="263.5"/>
+            <point key="canvasLocation" x="815" y="406"/>
         </collectionViewCell>
     </objects>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

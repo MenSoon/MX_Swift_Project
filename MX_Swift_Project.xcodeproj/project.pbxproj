@@ -53,6 +53,8 @@
 		9399E6E81B5F96CC007F860A /* ZeroCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9399E6E61B5F96CC007F860A /* ZeroCell.xib */; };
 		93CC646D1B61FB2500B83B16 /* FirstCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CC646B1B61FB2500B83B16 /* FirstCell.swift */; };
 		93CC646E1B61FB2500B83B16 /* FirstCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93CC646C1B61FB2500B83B16 /* FirstCell.xib */; };
+		93CE8AC91B677794002BE8AA /* defaultImageYishu.png in Resources */ = {isa = PBXBuildFile; fileRef = 93CE8AC81B677794002BE8AA /* defaultImageYishu.png */; };
+		93CE8ACB1B677AEF002BE8AA /* FirstModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CE8ACA1B677AEF002BE8AA /* FirstModel.swift */; };
 		93F809571B60D88B004E68AC /* FileUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F809511B60D88B004E68AC /* FileUtility.swift */; };
 		93F809581B60D88B004E68AC /* NSDictionaryExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F809521B60D88B004E68AC /* NSDictionaryExt.swift */; };
 		93F809591B60D88B004E68AC /* NSStringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F809531B60D88B004E68AC /* NSStringExt.swift */; };
@@ -124,6 +126,8 @@
 		93A71ADA1B6096F5001FFC9C /* MX_Swift_Project-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MX_Swift_Project-Bridging-Header.h"; sourceTree = "<group>"; };
 		93CC646B1B61FB2500B83B16 /* FirstCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstCell.swift; sourceTree = "<group>"; };
 		93CC646C1B61FB2500B83B16 /* FirstCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstCell.xib; sourceTree = "<group>"; };
+		93CE8AC81B677794002BE8AA /* defaultImageYishu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defaultImageYishu.png; sourceTree = "<group>"; };
+		93CE8ACA1B677AEF002BE8AA /* FirstModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstModel.swift; sourceTree = "<group>"; };
 		93F809511B60D88B004E68AC /* FileUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileUtility.swift; sourceTree = "<group>"; };
 		93F809521B60D88B004E68AC /* NSDictionaryExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDictionaryExt.swift; sourceTree = "<group>"; };
 		93F809531B60D88B004E68AC /* NSStringExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSStringExt.swift; sourceTree = "<group>"; };
@@ -184,6 +188,7 @@
 		9399E67C1B5F3C0E007F860A /* MX_Swift_Project */ = {
 			isa = PBXGroup;
 			children = (
+				9399E69E1B5F3CFE007F860A /* ViewController */,
 				93A5D64B1B61E47200F5098A /* ZeroViewController */,
 				93A5D64A1B61E44900F5098A /* FirstViewController */,
 				9399E69A1B5F3C8F007F860A /* RootViewController.swift */,
@@ -243,6 +248,7 @@
 		9399E6B01B5F4275007F860A /* tabbar */ = {
 			isa = PBXGroup;
 			children = (
+				93CE8AC81B677794002BE8AA /* defaultImageYishu.png */,
 				9399E6B11B5F4275007F860A /* tabbar_bg@2x.png */,
 				9399E6B21B5F4275007F860A /* tabbar_icon7.png */,
 				9399E6B31B5F4275007F860A /* tabbar_icon7@2x.png */,
@@ -280,6 +286,7 @@
 				9399E6A41B5F3D44007F860A /* FirstViewController.xib */,
 				93CC646B1B61FB2500B83B16 /* FirstCell.swift */,
 				93CC646C1B61FB2500B83B16 /* FirstCell.xib */,
+				93CE8ACA1B677AEF002BE8AA /* FirstModel.swift */,
 			);
 			name = FirstViewController;
 			sourceTree = "<group>";
@@ -291,7 +298,6 @@
 				9399E6A01B5F3D2A007F860A /* ZeroViewController.xib */,
 				9399E6E51B5F96CC007F860A /* ZeroCell.swift */,
 				9399E6E61B5F96CC007F860A /* ZeroCell.xib */,
-				9399E69E1B5F3CFE007F860A /* ViewController */,
 				93FCFE0F1B60CB2900E5AF07 /* ZeroModel.swift */,
 			);
 			name = ZeroViewController;
@@ -395,6 +401,7 @@
 				9399E6AE1B5F3DAC007F860A /* ThirdViewController.xib in Resources */,
 				9399E6CB1B5F4275007F860A /* tabbar_bg@2x.png in Resources */,
 				9399E6CC1B5F4275007F860A /* tabbar_icon7.png in Resources */,
+				93CE8AC91B677794002BE8AA /* defaultImageYishu.png in Resources */,
 				9399E6851B5F3C0E007F860A /* LaunchScreen.xib in Resources */,
 				9399E6D31B5F4275007F860A /* tabbar_icon_1@2x.png in Resources */,
 				9399E6E01B5F4275007F860A /* tabbar_icon_5@3x.png in Resources */,
@@ -449,6 +456,7 @@
 				93F809581B60D88B004E68AC /* NSDictionaryExt.swift in Sources */,
 				93F809591B60D88B004E68AC /* NSStringExt.swift in Sources */,
 				9399E69C1B5F3C8F007F860A /* RootViewController.swift in Sources */,
+				93CE8ACB1B677AEF002BE8AA /* FirstModel.swift in Sources */,
 				9399E6A11B5F3D2A007F860A /* ZeroViewController.swift in Sources */,
 				9399E6E71B5F96CC007F860A /* ZeroCell.swift in Sources */,
 				93FCFE101B60CB2900E5AF07 /* ZeroModel.swift in Sources */,

@@ -22,7 +22,7 @@ class ZeroCell: UITableViewCell {
     }
     func showDataModel(ZeroModelData:ZeroModel){
         self.special_nameLabel.text = ZeroModelData.special_name!
-        self.thumbImageView.setImage("http://www.yishu.com\(ZeroModelData.thumb!)", placeHolder: nil)
+        self.thumbImageView.setImage("http://www.yishu.com\(ZeroModelData.thumb!)", placeHolder: UIImage(named: "defaultImageYishu.png"))
         self.hitsLabel.text = ZeroModelData.hits!
         self.bidtimesLabel.text = ZeroModelData.bidtimes!
         self.goods_countLabel.text = ZeroModelData.goods_count!
