@@ -27,8 +27,6 @@ class FirstCell: UICollectionViewCell {
 //
     func showDataModelInCell(model:FirstModel){
         
-        
-        
         var imageView:UIImageView? = self.contentView.viewWithTag(222) as? UIImageView
         if imageView == nil{
             imageView = UIImageView(frame: CGRectMake(0, 0, 90, 100))

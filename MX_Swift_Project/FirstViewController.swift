@@ -36,7 +36,7 @@ class FirstViewController: UIViewController,UICollectionViewDelegate,UICollectio
     }
     
     func loadData(){
-        YRHttpRequest.requestWithURL("http://www.yishu.com/Api/Auction/specialGoodsList?special_id=2601&order_type=0&p=1&verson=1.08&tagClient=APP&device=ios", completionHandler: { (data) -> Void in
+        YRHttpRequest.requestWithURL("http://www.yishu.com/Api/Auction/specialGoodsList?special_id=2631&order_type=0&p=1&verson=1.08&tagClient=APP&device=ios", completionHandler: { (data) -> Void in
             
            
 //            var dataArr = data["data"] as! NSArray
@@ -56,18 +56,30 @@ class FirstViewController: UIViewController,UICollectionViewDelegate,UICollectio
 //            }
 //            println(self.dataSource)
 //            self.myCollectionView?.reloadData()
-            var dataArr = data["data"] as! NSArray
-            for dict :AnyObject in dataArr{
-                var model:FirstModel = FirstModel()
-                model .setValuesForKeysWithDictionary(dict as! [NSObject : AnyObject])
-                self.dataSource.addObject(model)
+            if (data["data"] is NSArray){
+                var dataArr = data["data"] as! NSArray
+                for dict :AnyObject in dataArr{
+                    var model:FirstModel = FirstModel()
+                    model .setValuesForKeysWithDictionary(dict as! [NSObject : AnyObject])
+                    self.dataSource.addObject(model)
+                }
+                println(self.dataSource)
+                self.myCollectionView?.reloadData()
+            }else{
+                self.showAlertView("提示", message: "专场已结束")
             }
-            println(self.dataSource)
-            self.myCollectionView?.reloadData()
+            
         })
         
     }
     
+    func showAlertView(title:String,message:String) {
+        var alert = UIAlertView()
+        alert.title = title
+        alert.message = message
+        alert.addButtonWithTitle("确定")
+        alert.show()
+    }
     func initVIew(){
         let flowLayout = UICollectionViewFlowLayout()
         flowLayout.itemSize = CGSizeMake(90, 100)
@@ -77,7 +89,6 @@ class FirstViewController: UIViewController,UICollectionViewDelegate,UICollectio
         flowLayout.minimumInteritemSpacing = 0.0;//每个相邻layout的左右
         flowLayout.headerReferenceSize = CGSizeMake(10, 10);
         
-
         myCollectionView = UICollectionView(frame: CGRectMake(0, 64, viewWidth, viewHeight-64-49), collectionViewLayout:flowLayout)
         self.myCollectionView!.alwaysBounceVertical = true
         myCollectionView?.delegate = self
